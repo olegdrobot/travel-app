@@ -1,0 +1,102 @@
+.footer {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	background: #4a9396;
+	font-family:  Lobster, Pattaya, Roboto, sans-serif;
+}
+.footer-label {
+	width: 100%;
+	height: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-label a {
+	text-decoration: none;
+	color: #000;
+}
+.footer-label a:hover {
+	cursor: pointer;
+	color:rgba(0, 0, 0, 0.5);
+}
+.githubText {
+	width: 18%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+}
+.github-text {
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.img-youtube {
+	width: 15%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.img {
+	width: 40px;
+	height: 20px;
+	background: url(../images/rs_school_js.svg);
+	background-repeat: no-repeat;
+}
+.youtube, .github {
+	width: 40px;
+	height: 30px;
+}
+.github {
+	background: url(../images/github.svg);
+	background-repeat: no-repeat;
+}
+
+.youtube {
+	background: url(../images/youtube.png);
+	background-repeat: no-repeat;
+}
+@media (min-width: 768px) and (max-width: 992px) { 
+	.githubText {
+		width: 25%;
+		font-size: 17px;
+	}
+}
+@media (min-width: 576px) and (max-width: 768px) { 
+	.githubText {
+		width: 30%;
+		font-size: 14px;
+	}
+	.img-youtube { 
+		width: 20%;
+	}
+}
+@media (min-width: 320px) and (max-width: 576px) { 
+	.footer {
+		width: 100%;
+		height: 60px;
+	}
+	.githubText {
+		width: 30%;
+		height: 90%;
+		flex-direction: column;
+		align-items: flex-start;
+		font-size: 14px;
+	}
+	.github {
+		width: 30px;
+		height: 24px;
+	}
+	.img-youtube { 
+		width: 20%;
+		height: 95%;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+}
