@@ -1,0 +1,48 @@
+.App-currency{
+	width: 100%;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.currency{
+	font-size: 17px;
+}
+.currency-text {
+	margin-bottom: 2%;
+	font-size: 20px;
+	font-weight: 600;
+	font-family: Lobster, Pattaya, Roboto, sans-serif;
+}
+@media all and (min-width: 768px) and (max-width: 992px) { 
+	.currency{
+		font-size: 16px;
+	}
+	.currency-text {
+		font-size: 18px;
+	}
+}
+@media all and (min-width: 576px) and (max-width: 768px) { 
+	.App-currency {
+		width: 100%;
+		height: 40%;
+	}
+	.currency{
+		font-size: 16px;
+	}
+	.currency-text {
+		font-size: 18px;
+	}
+}
+@media all and (min-width: 320px) and (max-width: 576px) { 
+	.App-currency {
+		height: 25%;
+	}
+	.currency{
+		font-size: 14px;
+	}
+	.currency-text {
+		font-size: 16px;
+	}
+}

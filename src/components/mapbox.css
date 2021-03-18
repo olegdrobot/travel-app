@@ -1,0 +1,17 @@
+.map {
+	width: 60%;
+	height: 450px;
+	margin: 10px;
+}
+@media (min-width: 576px) and (max-width: 767px) { 
+	.map {
+		width: 90%;
+		height: 420px;
+	}
+}
+@media (min-width: 320px) and (max-width: 575px) { 
+	.map {
+		width: 90%;
+		height: 350px;
+	}
+}

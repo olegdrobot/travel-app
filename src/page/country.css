@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+.country {
+	width: 100%;
+	height: auto;
+	margin:0 auto;	
+}
+.text {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.text h4, .text h5 {
+	font-size: 25px;
+	font-weight: 600;
+	font-family: Lobster, Pattaya, Roboto, sans-serif;
+}
+.description {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.country_img {
+	width: 280px;
+	height: 280px;
+}
+.country_img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.country_inform {
+	width: 60%;
+	height: 100%;
+	padding: 15px 0 15px 0;
+	font-size: 16px;
+	background: #fff;
+	text-align: center;
+}
+.parallax {
+	width: 100%;
+	min-height: 400px;
+    background: transparent;
+}
+.video {
+	width: 80%;
+	height: 515px;
+	margin: 10px;
+}
+.maps {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.widget {
+	width: 30%;
+	height: 450px;
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+@media all and (min-width: 992px) and (max-width: 1200px) { 
+	.video {
+		height: 430px;
+	}
+
+}
+@media all and (min-width: 768px) and (max-width: 992px) { 
+	.text h4, .text h5 {
+		font-size: 22px;
+	}
+	.country_inform {
+		font-size: 14px;
+	}
+	.video {
+		height: 325px;
+	}
+
+}
+@media all and (min-width: 576px) and (max-width: 767px) { 
+	.description {
+		flex-direction: column;
+	}
+	.country_img {
+		width: 90%;
+		height: 50%;
+	}
+	.country_inform {
+		width: 90%;
+		height: 50%;
+		font-size: 14px;
+	}
+	.video {
+		height: 245px;
+	}
+	.maps {
+		flex-direction: column;
+	}
+	.widget {
+		width: 90%;
+		height: 350px;
+		margin-bottom: 2%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media all and (min-width: 320px) and (max-width: 576px) { 
+	.text h4, .text h5 {
+		font-size: 18px;
+	}
+	.description {
+		flex-direction: column;
+	}
+	.country_img {
+		width: 90%;
+		height: 30%;
+	}
+	.country_inform {
+		width: 90%;
+		height: 70%;
+		font-size: 13px;
+	}
+	.video {
+		height: 250px;
+	}
+	.maps {
+		flex-direction: column;
+	}
+	.widget {
+		width: 90%;
+		margin-bottom: 2%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+}

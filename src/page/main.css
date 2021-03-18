@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+.main {
+	width: 100%;
+	min-height: 900px;
+	max-height: auto;
+	background: url(../images/background.jpg);
+	margin: 0 auto;
+}
+.container {
+	width: 100%;
+}
+.row {
+	justify-content: space-around;
+}
+.cards-country {
+	width: 270px;
+	height: 270px;
+	margin: 15px;
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	transition: 1s;
+}
+.cards-country:hover {
+	cursor: pointer;
+  	box-shadow: 0 14px 28px #4a9396, 0 10px 10px #4a9396;
+  	transform: scale(1.05);
+  	cursor: pointer; 
+}
+.card {
+	width: 100%;
+	height: 75%;
+	border-radius: 10px 10px 0 0;
+}
+.card img {
+	width: 100%;
+	height: 100%;
+	border-radius:  10px 10px 0 0;
+}
+.inform {
+	width: 100%;
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	border-radius: 0 0 10px 10px;
+	background:#fff;
+	color: #000;
+	font-family:  Lobster, Pattaya, Roboto, sans-serif;
+}
+@media (min-width: 576px) and (max-width: 768px) { 
+	.inform {
+		font-size: 20px;
+	}	
+	.cards-country { 
+		width: 250px;
+		height: 250px;
+	}
+}
+@media (min-width: 320px) and (max-width: 576px) { 
+	.cards-country { 
+		width: 250px;
+		height: 250px;
+	}
+}

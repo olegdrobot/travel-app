@@ -1,0 +1,41 @@
+.weather{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.weather-text {
+	font-size: 20px;
+	font-weight: 600;
+	font-family: Lobster, Pattaya, Roboto, sans-serif;
+}
+@media all and (min-width: 768px) and (max-width: 992px) { 
+	.weather {
+		font-size: 14px;
+	}
+	.weather-text {
+		font-size: 16px;
+	}
+}
+@media all and (min-width: 576px) and (max-width: 768px) { 
+	.weather {
+		width: 65%;
+		height: 60%;
+		font-size: 16px;
+	}
+	.weather-text {
+		font-size: 18px;
+	}
+}
+@media all and (min-width: 320px) and (max-width: 576px) { 
+	.weather {
+		width: 100%;
+		height: 50%;
+		font-size: 14px;
+	}
+	.weather-text {
+		font-size: 18px;
+	}
+}
